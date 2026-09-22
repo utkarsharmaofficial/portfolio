@@ -3,7 +3,7 @@ export const profile = {
   role: "Software Engineer",
   location: "Bangalore, India",
   email: "utkarsharmaofficial@gmail.com",
-  github: "https://github.com/utkarshsharma",
+  github: "https://github.com/utkarsharmaofficial",
   linkedin: "https://www.linkedin.com/in/utkarsh-sharma3112/",
   resumeUrl: "/resume.pdf",
   tagline: "Building distributed systems, data pipelines, and AI-native infrastructure.",
@@ -68,7 +68,7 @@ export const projects: Project[] = [
       "Provisioned the full AWS footprint (EKS, RDS, KMS, IRSA, Route53) as modular Terraform, with a Java Kubernetes operator exposing MCPServer CRDs for GitOps-managed server registration.",
     ],
     stack: ["Java", "Spring Boot", "Kubernetes", "Terraform", "AWS", "OAuth 2.1", "OPA"],
-    links: [{ label: "GitHub", href: "https://github.com/utkarshsharma" }],
+    links: [{ label: "GitHub", href: "https://github.com/utkarsharmaofficial" }],
   },
   {
     name: "ProjectThor",
@@ -80,7 +80,7 @@ export const projects: Project[] = [
       "Lightweight real-time messaging via MQTT, reducing latency to 5ms for IoT devices across heterogeneous systems.",
     ],
     stack: ["Java", "Apache ZooKeeper", "Aerospike", "MQTT", "RabbitMQ", "Akka"],
-    links: [{ label: "GitHub", href: "https://github.com/utkarshsharma" }],
+    links: [{ label: "GitHub", href: "https://github.com/utkarsharmaofficial" }],
   },
 ];
 

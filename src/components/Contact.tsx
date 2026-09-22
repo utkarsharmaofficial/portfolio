@@ -7,7 +7,7 @@ import { GithubIcon, LinkedinIcon } from "@/components/ui/BrandIcons";
 const links = [
   { label: profile.email, href: `mailto:${profile.email}`, icon: Mail },
   { label: "linkedin.com/in/utkarsh-sharma3112", href: profile.linkedin, icon: LinkedinIcon },
-  { label: "github.com/utkarshsharma", href: profile.github, icon: GithubIcon },
+  { label: "github.com/utkarsharmaofficial", href: profile.github, icon: GithubIcon },
 ];
 
 export function Contact() {
