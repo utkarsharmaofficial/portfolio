@@ -2,7 +2,7 @@ export const profile = {
   name: "Utkarsh Sharma",
   role: "Software Engineer",
   location: "Bangalore, India",
-  email: "utkarsharmaofficial@gmail.com",
+  email: "hello@utkarsharmaofficial.in",
   github: "https://github.com/utkarsharmaofficial",
   linkedin: "https://www.linkedin.com/in/utkarsh-sharma3112/",
   resumeUrl: "/resume.pdf",
