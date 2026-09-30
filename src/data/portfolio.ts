@@ -46,6 +46,19 @@ export const experience: Experience[] = [
     ],
     stack: ["Python", "JavaScript", "MCP", "Bixby"],
   },
+  {
+    company: "Samsung Research and Development Institute",
+    role: "Software Engineer Intern — Real Time Communication",
+    location: "Bangalore, India",
+    period: "Jun 2023 — Aug 2023",
+    bullets: [
+      "Architected an Android benchmarking application using Kotlin and Jetpack Compose, enabling comprehensive analysis of the throughput efficiency of scheduler and non-scheduler algorithms and leading to 15% faster algorithm selection.",
+      "Researched video encoding standards (H.264/H.265) through academic papers, implementing optimal encoding parameters that improved processing efficiency by 10%.",
+      "Architected a performance testing framework using the MediaRecorder API and CameraX, achieving 30 FPS sustained capture throughput.",
+      "Optimized throughput efficiency by 60% through scheduler algorithm workflows.",
+    ],
+    stack: ["Kotlin", "Jetpack Compose", "Android", "CameraX", "MediaRecorder API", "H.264/H.265"],
+  },
 ];
 
 export type Project = {
@@ -58,6 +71,19 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    name: "Job Tracker",
+    description:
+      "A local-first dashboard that reads Gmail (read-only), uses an on-device LLM to detect job application emails, and tracks each application from Applied to Offer.",
+    bullets: [
+      "Sync pipeline searches Gmail for ATS and job-platform emails (Greenhouse, Lever, Workday, LinkedIn, …) and classifies each one with a local Ollama model into Zod-validated structured output — email content never leaves the machine.",
+      "Groups emails into applications by thread and normalized company/role, with forward-only status rules, manual status locks, ghosting detection, and resumable 6-hourly background auto-sync.",
+      "Benchmarked 5 local models on a 100-email test suite (including prompt-injection and non-application emails); selected ministral-3:8b at 99% end-to-end accuracy.",
+      "Overview analytics (response rate, calendar heatmap, weekly/monthly trends) and a drag-and-drop Kanban board, backed by SQLite via Node's built-in node:sqlite.",
+    ],
+    stack: ["TypeScript", "Next.js", "React", "SQLite", "Ollama", "Gmail API", "OAuth 2.0", "Tailwind CSS"],
+    links: [{ label: "GitHub", href: "https://github.com/utkarsharmaofficial/job-tracker" }],
+  },
+  {
     name: "Aperture — Governed MCP Gateway",
     description:
       "A governed gateway for the Model Context Protocol that aggregates multiple upstream MCP servers behind a single OAuth 2.1-authenticated endpoint.",
@@ -68,7 +94,6 @@ export const projects: Project[] = [
       "Provisioned the full AWS footprint (EKS, RDS, KMS, IRSA, Route53) as modular Terraform, with a Java Kubernetes operator exposing MCPServer CRDs for GitOps-managed server registration.",
     ],
     stack: ["Java", "Spring Boot", "Kubernetes", "Terraform", "AWS", "OAuth 2.1", "OPA"],
-    links: [{ label: "GitHub", href: "https://github.com/utkarsharmaofficial" }],
   },
   {
     name: "ProjectThor",
@@ -80,15 +105,18 @@ export const projects: Project[] = [
       "Lightweight real-time messaging via MQTT, reducing latency to 5ms for IoT devices across heterogeneous systems.",
     ],
     stack: ["Java", "Apache ZooKeeper", "Aerospike", "MQTT", "RabbitMQ", "Akka"],
-    links: [{ label: "GitHub", href: "https://github.com/utkarsharmaofficial" }],
   },
 ];
 
-export type SkillGroup = { label: string; items: string[] };
+export type SkillGroup = { label: string; items: string[]; note?: string };
 
 export const skills: SkillGroup[] = [
-  { label: "Languages", items: ["Java", "Python", "C++"] },
-  { label: "Backend & Frameworks", items: ["Spring Boot", "Akka"] },
+  {
+    label: "Languages",
+    items: ["Java", "Python", "C++", "Kotlin", "TypeScript"],
+    note: "Language is no longer a barrier, thanks to Large Language Models.",
+  },
+  { label: "Backend & Frameworks", items: ["Spring Boot", "Akka", "Next.js", "React", "Jetpack Compose"] },
   {
     label: "Data & Messaging",
     items: ["Hadoop", "Hive", "Sqoop", "Apache SeaTunnel", "Apache ZooKeeper", "RabbitMQ", "MQTT", "Aerospike"],

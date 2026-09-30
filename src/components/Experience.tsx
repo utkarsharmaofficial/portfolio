@@ -13,7 +13,7 @@ export function Experience() {
 
         <div className="relative space-y-12 border-l border-border pl-8">
           {experience.map((job, i) => (
-            <Reveal key={job.company} delay={i * 0.08}>
+            <Reveal key={`${job.company}-${job.period}`} delay={i * 0.08}>
               <div className="relative">
                 <span className="absolute top-1.5 -left-[calc(2rem+5px)] h-2.5 w-2.5 rounded-full border-2 border-accent bg-background" />
                 <div className="flex flex-wrap items-baseline justify-between gap-2">

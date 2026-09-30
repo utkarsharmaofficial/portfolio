@@ -23,6 +23,7 @@ export function Skills() {
                     <Tag key={item}>{item}</Tag>
                   ))}
                 </div>
+                {group.note && <p className="mt-3 text-sm text-muted italic">{group.note}</p>}
               </div>
             </Reveal>
           ))}
